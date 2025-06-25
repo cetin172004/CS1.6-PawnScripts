@@ -30,12 +30,6 @@ public cmd_powerup(id) {
         return PLUGIN_HANDLED
     }
     
-    // check if player is alive
-    if (!is_user_alive(id)) {
-        client_print(id, print_chat, "You must be alive to use this command!")
-        return PLUGIN_HANDLED
-    }
-    
     // update hp ==> add 50
     new current_health = get_user_health(id)
     new new_health = current_health + 50
