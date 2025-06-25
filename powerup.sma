@@ -52,7 +52,6 @@ public cmd_powerup(id) {
     give_item(id, "weapon_fiveseven")
     cs_set_user_bpammo(id, CSW_FIVESEVEN, 50)
     
-	
 	// message
     new name[32]
     get_user_name(id, name, charsmax(name))
